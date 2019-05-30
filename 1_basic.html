@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  </head>
+  <body>
+    <div id="app">
+      Mensaje: {{message}}
+    </div>
+
+    <script>
+      let app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Yaaa son las ' + new Date().toLocaleString() +' DOJO?'
+        }
+      })
+    </script>
+  </body>
+</html>
