@@ -2,13 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
     <div  id="app">
-      {{title}}
+      <h1>{{title}}</h1>
+      <button v-on:click="showAlert">show alert</button>
+      
+      {{inputText}}
+      <input v-model="inputText" v-on:keyup.enter="alertInputText">
     </div>
-    <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+
     <script src="app.js"></script>
   </body>
 </html>

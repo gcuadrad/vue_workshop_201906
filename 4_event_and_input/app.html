@@ -2,13 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
     <div  id="app">
-      {{title}}
+      <h1>{{title}}</h1>
+      <br>
+      {{message}}
+      <br>
+      <input v-model="message">
+      <br>
+      <button v-on:click="goToMamoth(false)">MAMUT?</button>
+      <br>
+      {{counter}}
+      <button v-on:click="counter++">+</button>
     </div>
-    <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
