@@ -9,14 +9,13 @@
     <div  id="app">
       <h1>{{title}}</h1>
       <button v-on:click="showAlert">show alert</button>
-      
+
       {{inputText}}
+      <br>
+      count: {{letterCounter}}
+      <br>
       <input v-model="inputText" v-on:keyup.enter="alertInputText">
     </div>
-
-
-
-
     <script src="app.js"></script>
   </body>
 </html>

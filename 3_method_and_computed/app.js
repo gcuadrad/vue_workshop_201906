@@ -11,5 +11,10 @@ let app = new Vue({
     alertInputText() {
       alert(this.inputText)
     }
+  },
+  computed: {
+    letterCounter () {
+      return this.inputText.split('').length;
+    }
   }
 })
